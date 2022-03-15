@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial.scale=1.0"> -->
+    <title>Curd</title>
+</head>
+<body>
+    <h1>Crud</h1>
+    <section class="crud">
+        <article>
+            <h2 class="crud-title">Agregar datos</h2>
+            <form class="crud-form">
+                <input type="text" name="nombre" placeholder="nombre" required>
+                <br>
+                <input type="text" name="phone" placeholder="Teléfono" required>
+                <br>
+                <input type="text" name="email" placeholder="Email" required>
+                <br>
+                <input type="text" name="country" placeholder="País" required>
+                <br>
+                <input type="text" name="region" placeholder="Región" required>
+                <br>
+                <input type="text" name="address" placeholder="Dirección" required>
+                <br>
+                <input type="text" name="postalZip" placeholder="Cos Postal" required>
+                <br>
+                <input type="text" name="text" placeholder="Descripción" required>
+                <br>
+                <input type="text" name="currency" placeholder="Dinero" required>
+                <br>
+                <input type="text" name="numberrange" placeholder="Rango" required>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="id">
+            </form>
+        </article>
+        <article>
+            <h2>Ver Lista</h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <!-- <th>id</th> -->
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                        <th>País</th>
+                        <th>Región</th>
+                        <th>Dirección</th>
+                        <th>Cod Postal</th>
+                        <th>Descripción</th>
+                        <th>Dinero</th>
+                        <th>Rango</th>
+                        <th>Alfanumerico</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </article>
+    </section>
+    <template id="crud-template">
+        <tr>
+            <!-- <td class="id">id</td> -->
+            <td class="name"></td>
+            <td class="phone"></td>
+            <td class="email"></td>
+            <td class="country"></td>
+            <td class="region"></td>
+            <td class="address"></td>
+            <td class="postalZip"></td>
+            <td class="text"></td>
+            <td class="currency"></td>
+            <td class="numberrange"></td>
+            <td class="alphanumeric"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </td>
+        </tr>
+    </template>
+    <script src="main.js"></script>
+</body>
